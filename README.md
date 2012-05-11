@@ -1,15 +1,23 @@
-Vim syntax file for Swift
-=========================
+# Vim syntax file for Swift
 
-Language: Swift script
-Maintainer: Allan Espinosa
-Latest Revision: 2010 March 27
+Language: Swift script  
+Maintainer: Allan Espinosa  
+Latest Revision: 2010 March 27  
 
-Installation:
--------------
+This provides syntax higlighting for the
+[Swift](http://www.ci.uchicago.edu/swift) programming language.
 
-1. get swift.vim from http://www.ci.uchicago.edu/~aespinosa/swift/swift.vim
-2. place swift.vim in your ~/.vim/syntax directory
-3. add the following lines to your ~/.vim/filetype.vim :
-    au BufRead,BufNewFile *.swift setfiletype swift
+## Installation:
 
+Using [vim-update-bundle](https://github.com/bronson/vim-update-bundles), add
+the following lines to your `.vimrc`:
+
+```vimrc
+" Bundle: aespinosa/Swift-vim
+```
+
+Using [Vundle](https://github.com/gmarik/vundle) instead:
+
+```vimrc
+Bundle "aespinosa/Swift-vim"
+```
