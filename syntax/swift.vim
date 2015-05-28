@@ -29,6 +29,7 @@ syn region	swiftCommentL		start="//" skip="\\$" end="$" keepend contains=@swiftC
 syn keyword	swiftTodo		contained TODO FIXME XXX
 
 syn keyword swiftImport		import
+syn keyword swiftFunction	sprintf strcat arg extractInt extractFloat filename filenames length readData readStructured regexp strcut strjoin strsplit toInt toFloat toString trace tracef java writeData
 
 
 
@@ -43,6 +44,6 @@ hi def link swiftComment	Comment
 hi def link swiftTodo		Todo
 hi def link swiftFunction	Function
 hi def link swiftProcedure	Function
-hi def link swiftImport	Include
+hi def link swiftImport		Include
 
 let b:current_syntax = "swift"
