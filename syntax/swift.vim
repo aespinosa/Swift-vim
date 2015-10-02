@@ -13,7 +13,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword	swiftAtomicType		type app global
-syn keyword	swiftPrimitiveType	int float string
+syn keyword	swiftPrimitiveType	int float string boolean
 
 syn keyword	swiftConstant		stdout stderr
 syn region	swiftString		start=+L\="+ skip=+\\\\\|\\"+ end=+"+
@@ -29,6 +29,7 @@ syn region	swiftCommentL		start="//" skip="\\$" end="$" keepend contains=@swiftC
 syn keyword	swiftTodo		contained TODO FIXME XXX
 
 syn keyword swiftImport		import
+syn keyword swiftFunction	sprintf strcat arg extractInt extractFloat filename filenames length readData readStructured regexp strcut strjoin strsplit toInt toFloat toString trace tracef java writeData
 
 
 
