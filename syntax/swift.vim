@@ -13,7 +13,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword	swiftAtomicType		type app global
-syn keyword	swiftPrimitiveType	int float string
+syn keyword	swiftPrimitiveType	int float string boolean
 
 syn keyword	swiftConstant		stdout stderr
 syn region	swiftString		start=+L\="+ skip=+\\\\\|\\"+ end=+"+
@@ -44,6 +44,6 @@ hi def link swiftComment	Comment
 hi def link swiftTodo		Todo
 hi def link swiftFunction	Function
 hi def link swiftProcedure	Function
-hi def link swiftImport		Include
+hi def link swiftImport	Include
 
 let b:current_syntax = "swift"
